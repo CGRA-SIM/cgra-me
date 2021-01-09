@@ -37,3 +37,7 @@ cmake-build*
 
 #Excluding specific file
 
+#Excluding clion files
+cmake-build-debug
+output
+.idea
