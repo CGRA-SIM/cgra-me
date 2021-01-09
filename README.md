@@ -18,7 +18,7 @@ fixing the io problem\
 [src/core/Module.cpp](src/core/Module.cpp)
 
 ### Bitstream
-generating bitstream\`
+generating bitstream\
 [src/core/BitStream.cpp](src/core/BitStream.cpp)
 
 hardcoded data for bitstream\
@@ -56,3 +56,6 @@ Dataflow graph\
   - Data about inputs and outputs are contained inside DFG as arguments and will be used in the future for generating the code for CPU. Details about implementation: [example](), [new OpGraph class members](https://github.com/dekisa/cgra-me/blob/DFG_runonfunction_const_arg_data/inc/CGRA/OpGraph.h#L118), [filling the DFG data](https://github.com/dekisa/cgra-me/blob/DFG_runonfunction_const_arg_data/llvm-passes/DFG/DFGGeneration.cpp#L591), [printing the arguments to dot](https://github.com/dekisa/cgra-me/blob/DFG_runonfunction_const_arg_data/src/core/OpGraph.cpp#L527) . Parsing these arguments is left for future, see [parser](https://github.com/dekisa/cgra-me/blob/DFG_runonfunction_const_arg_data/src/core/OpGraph.cpp#L166)
 - When using constans in C code, they should be only used as left side operand.
 - For generating bitstream you should provide the filename using `--bitstream_output <filename>` option, see [example](https://github.com/dekisa/cgra-me/blob/DFG_runonfunction_const_arg_data/benchmarks/rules_bitstream.mk#L48). You should only use this option with NEWS Artchitecture
+
+## References
+- [https://github.com/dekisa/cgra-me](https://github.com/dekisa/cgra-me) 2021/1/9
