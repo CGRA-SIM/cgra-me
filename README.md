@@ -59,3 +59,18 @@ Dataflow graph\
 
 ## References
 - [https://github.com/dekisa/cgra-me](https://github.com/dekisa/cgra-me) 2021/1/9
+
+## Appendix
+```shell
+# gurobi config
+export PATH=/root/gurobi911/linux64/bin:$PATH
+export GRB_LICENSE_FILE=/root/gurobi911/gurobi.lic
+export LD_LIBRARY_PATH=/root/gurobi911/linux64/lib:$LD_LIBRARY_PATH
+export GUROBI_HOME=/root/gurobi911/linux64
+
+# llvm-config
+apt install llvm-10 llvm-10-dev
+```
+- refer [https://www.cnblogs.com/xuyaowen/p/Gurobi-Optimizer.html](https://www.cnblogs.com/xuyaowen/p/Gurobi-Optimizer.html)
+- modify `CmakeList.txt && Makefile`
+- make

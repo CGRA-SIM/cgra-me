@@ -14,25 +14,25 @@ if(DEFINED ENV{GUROBI_HOME})
         find_path(
             GUROBI_INCLUDE_DIR
             NAMES gurobi_c++.h
-            PATHS "$ENV{GUROBI_HOME}/linux64/include"
+            PATHS "$ENV{GUROBI_HOME}/include"
         )
 
         find_library(
             GUROBI_4_2_LIBRARY
             NAMES gurobi_g++4.2 libgurobi_g++4.2
-            PATHS "$ENV{GUROBI_HOME}/linux64/lib"
+            PATHS "$ENV{GUROBI_HOME}/lib"
         )
 
         find_library(
             GUROBI_5_2_LIBRARY
             NAMES gurobi_g++5.2 libgurobi_g++5.2
-            PATHS "$ENV{GUROBI_HOME}/linux64/lib"
+            PATHS "$ENV{GUROBI_HOME}/lib"
         )
 
         find_library(
             GUROBI_MAIN_LIBRARY
             NAMES ${GUROBI_SHARED_LIB_NAME}
-            PATHS "$ENV{GUROBI_HOME}/linux64/lib"
+            PATHS "$ENV{GUROBI_HOME}/lib"
         )
     endif()
 

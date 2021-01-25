@@ -5,11 +5,13 @@ set (BUILD_SHARED_LIBS ON)
 
 project(
   cgra-me
-  VERSION 1.0.0
+  VERSION 1.0.1
   LANGUAGES CXX
   )
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
+
+MESSAGE("CMAKE_MODULE_PATH: " ${CMAKE_MODULE_PATH})
 
 set(CGRAME_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/inc)
 
@@ -26,7 +28,7 @@ add_subdirectory(thirdparty)
 add_subdirectory(src)
 
 option (BUILD_LLVM_PASSES
-"Build Loop extraction llvm passes. Requires LLVM" OFF)
+"Build Loop extraction llvm passes. Requires LLVM" ON)
 
 option (USE_ADL1
 "Use new parser for ADL" ON)

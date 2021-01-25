@@ -10,7 +10,7 @@ BUILD_DIR = ./build
 #Makefile generated from CMake
 GENERATED_MAKEFILE = $(BUILD_DIR)/Makefile
 
-#CMake flags
+#CMake flags;
 CMAKE_FLAGS = -DCMAKE_BUILD_TYPE=$(BUILD_TYPE) -DBUILD_LLVM_PASSES=ON
 
 #Check if cmake is installed
